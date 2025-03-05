@@ -18,6 +18,8 @@ require("lazy").setup({
     -- Import LazyVim's default configuration
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     { import = "plugins" }, -- Your custom plugin configurations
+
+    { "tpope/vim-commentary", event = "BufRead" },
   },
   defaults = { lazy = true },
 })

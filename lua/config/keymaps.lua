@@ -33,6 +33,10 @@ vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find fi
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Live grep" })
 vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Find buffers" })
 
+-- VimCommentary for commenting lines of code
+vim.api.nvim_set_keymap("v", "<leader>gc", "<Plug>Commentary", { noremap = false, silent = true })
+vim.api.nvim_set_keymap("v", "<leader>gc", "<Plug>Commentary", { noremap = false, silent = true })
+
 -- Open a terminal for viewing plots interactively
 vim.keymap.set(
   "n",
