@@ -20,6 +20,7 @@ require("lazy").setup({
     { import = "plugins" }, -- Your custom plugin configurations
 
     { "tpope/vim-commentary", event = "BufRead" },
+    { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } }, -- Add Telescope
   },
   defaults = { lazy = true },
 })
